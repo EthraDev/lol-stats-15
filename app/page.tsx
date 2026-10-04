@@ -199,14 +199,6 @@ export default function Home() {
       JSON.stringify(cache)
     );
 
-    localStorage.setItem(
-      LAST_SEARCH_KEY,
-      JSON.stringify({
-        gameName,
-        tagLine,
-      })
-    );
-
     setLastUpdated(timestamp);
   }
 
@@ -421,14 +413,6 @@ export default function Home() {
         localStorage.setItem(
           CACHE_KEY,
           JSON.stringify(cache)
-        );
-
-        localStorage.setItem(
-          LAST_SEARCH_KEY,
-          JSON.stringify({
-            gameName,
-            tagLine,
-          })
         );
 
         setLastUpdated(
